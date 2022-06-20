@@ -169,6 +169,7 @@ console.log(findSolution(24));
 
 
 //## Grow function
+//bad function
 function printFarmInventory(cows, chicken) {
   let cowString = String(cows);
   let chickenString = String(chicken);
@@ -201,7 +202,7 @@ function printFarmInventory(cows, chickens, pigs) {
 }
 printFarmInventory(7, 11, 3);
 
-//single concept.
+//single concept. get better
 function zeroPad(number, width) {
   let string = String(number);
   while (string.length < width) {
