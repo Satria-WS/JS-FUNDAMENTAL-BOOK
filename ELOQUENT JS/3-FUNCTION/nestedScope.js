@@ -79,7 +79,7 @@ console.log(chicken() + " came first."); //Maximum call stack size exceeded
 
 //##Optional argument
 function square(x) { return x * x; }
-console.log(square(, true, "hedgehog"));
+console.log(square(4, true, "hedgehog"));
 
 function minus(a, b) {
   if (b === undefined) return -a;
