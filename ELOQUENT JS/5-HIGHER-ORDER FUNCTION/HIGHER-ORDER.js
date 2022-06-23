@@ -41,5 +41,7 @@ function speak(line) {
   console.log(`The ${this.type} rabbit says ${line}`);
 }
 
-let whiteRabbit = {type:"white" , speak}
+let whiteRabbit = { type: "white", speak };
 console.log(whiteRabbit);
+let hungryRabbit = { type: "hungry, speak" };
+console.log(hungryRabbit);
