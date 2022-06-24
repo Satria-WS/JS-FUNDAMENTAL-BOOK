@@ -32,5 +32,46 @@ function normalize() {
 normalize.call({ coords: [4, 6, 8], length: 9 }); //[0.44 , 0.66 , 0.88]
 
 //##Prototypes
+//The JavaScript prototype property allows you to add new properties to object constructors:
 var empty = {};
 console.log(empty.toString);
+console.log(empty.toString());
+
+//##inheritence with Object.create()
+var parent = {
+  hair: "curly",
+  eyes: "blue",
+};
+var children = Object.create(parent);
+console.log(parent);
+console.log(children);
+console.log(typeof parent);
+console.log(typeof children);
+
+//##inheritence with property
+function Circle(radius) {
+  this.radius = radius;
+}
+
+Circle.prototype = {
+  phi: 3.14,
+  area: function () {
+    return this.phi * 4;
+  },
+};
+
+function Triangle(base, height) {
+  this.base = base;
+  this.height = height;
+}
+
+Triangle.prototype.area = function () {
+  return 0.5 * this.base * this.height;
+};
+
+var circle = new Circle(5);
+var triangle = new Triangle(4, 7);
+
+// console.log(circle.area());
+// console.log(triangle.area());
+
