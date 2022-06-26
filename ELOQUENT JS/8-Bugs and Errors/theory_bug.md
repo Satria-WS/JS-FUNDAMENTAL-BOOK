@@ -1,0 +1,1 @@
+- The process of finding mistakes—bugs—in programs is called debugging.

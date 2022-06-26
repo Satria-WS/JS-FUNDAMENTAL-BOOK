@@ -1,5 +1,6 @@
 //## Higher-Order Functions
-
+//Higher-Order function adalah fungsi yang beroperasi didalam fungsi lain
+//higher-order function adalah fungsi yang menerima fungsi sebagai argumen atau mengembalikan nilai fungsi sebagai output
 let total = 0,
   count = 1;
 while (count <= 10) {
@@ -14,46 +15,13 @@ function repeat(n, action) {
     action(i);
   }
 }
-
 let labels = [];
-// repeat(4, console.log);
-//## create a function value on the spot instead
+//create a function value on the spot instead
 repeat(6, (l, j) => {
   labels.push(l);
 });
-console.log(labels);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+repeat(4, console.log);
+console.log(labels); //[ 0, 1, 2, 3, 4, 5 ]
 
 
 
