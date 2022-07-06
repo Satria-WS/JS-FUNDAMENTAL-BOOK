@@ -12,3 +12,8 @@ function evalAndReturnX(code) {
 }
 console.log(evalAndReturnX("y = 99"));
 console.log(x);
+
+
+//#
+let pusOne = Function("n" , "return n + 1;");
+console.log(pusOne(4));
