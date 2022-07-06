@@ -5,5 +5,5 @@ When you call a function that performs a long-running action, it returns only wh
 action has finished and it can return the result. This stops your program for
 the time the action takes.
 
-//##aynchronous
+//## asynchronous
 An asynchronous model allows multiple things to happen at the same time
