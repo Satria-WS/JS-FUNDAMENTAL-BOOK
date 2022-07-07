@@ -9,3 +9,7 @@ the time the action takes.
 
 //## asynchronous
 An asynchronous model allows multiple things to happen at the same time
+
+
+//##Promise
+Promises make this easier. They can be either resolved (the action finished successfully) or rejected (it failed).
