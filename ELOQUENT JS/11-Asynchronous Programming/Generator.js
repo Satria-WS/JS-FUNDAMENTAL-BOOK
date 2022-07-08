@@ -13,3 +13,9 @@ console.log(powerRanger.next());
 console.log(powerRanger.next());
 console.log(powerRanger.next());
 
+for (let power of powers(3)) {
+  if (power > 50) break; {
+    console.log(power);
+    
+  }
+}
