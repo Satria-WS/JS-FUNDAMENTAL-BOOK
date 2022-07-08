@@ -1,3 +1,4 @@
+//## chaining method
 const siswa = [
   {
     nama: "Sutan Gading",
@@ -30,3 +31,20 @@ const siswa = [
     nilaiUas: 54,
   },
 ];
+
+var siswaPass = siswa.map((object) => {
+  const student = {
+    name: object.nama,
+    finalExam:
+      object.nilaiTugas * 0.2 + object.nilaiUts * 0.3 + object.nilaiUas * 0.5,
+  };
+  return student;
+}).filter(item => item.finalExam >= 60)
+
+//return jumlah nilai rata2 dibagi jumlah total siswa yang lulus
+const averagePassValue = siswaPass;
+
+
+
+
+
