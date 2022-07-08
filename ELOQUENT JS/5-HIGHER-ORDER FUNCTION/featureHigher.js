@@ -86,5 +86,9 @@ const totalHarga = addCart.reduce((accumulator, object) => {
 
 console.log(totalHarga);
 
+
+
+
+
 //refrence: https://gading.dev/id/blog/mengenal-higher-order-function-di-javascript
 // console.log(new Date().getFullYear()); //2022

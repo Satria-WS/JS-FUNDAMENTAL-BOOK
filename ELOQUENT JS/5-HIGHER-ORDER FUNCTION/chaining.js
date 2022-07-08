@@ -32,19 +32,27 @@ const siswa = [
   },
 ];
 
-var siswaPass = siswa.map((object) => {
-  const student = {
-    name: object.nama,
-    finalExam:
-      object.nilaiTugas * 0.2 + object.nilaiUts * 0.3 + object.nilaiUas * 0.5,
-  };
-  return student;
-}).filter(item => item.finalExam >= 60)
+var siswaPass = siswa
+  .map((object) => {
+    const student = {
+      name: object.nama,
+      finalExam:
+        object.nilaiTugas * 0.2 + object.nilaiUts * 0.3 + object.nilaiUas * 0.5,
+    };
+    return student;
+  })
+  .filter((item) => item.finalExam >= 60);
 
 //return jumlah nilai rata2 dibagi jumlah total siswa yang lulus
-const averagePassValue = siswaPass;
+//return take 2 decimal place
+const averagePassValue = siswaPass.reduce((accumulator, object) => {
+  let result = accumulator + object.finalExam / siswaPass.length;
+  let resultTwoDecimal = Math.round(result * 100) / 100;
+  return resultTwoDecimal;
+}, 0);
+console.log(averagePassValue);
 
 
-
-
-
+//##basic rule take decimal number
+let floatNumber = 235.3453;
+console.log(Math.round(floatNumber * 10) / 10);
