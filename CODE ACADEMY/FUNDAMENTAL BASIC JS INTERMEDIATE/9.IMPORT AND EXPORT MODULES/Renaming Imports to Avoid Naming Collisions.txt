@@ -1,0 +1,19 @@
+/* inside greeterEspanol.js */
+const greet = () => {
+  console.log('hola');
+}
+export { greet };
+ 
+/* inside greeterFrancais.js */
+const greet = () => {
+  console.log('bonjour');
+}
+export { greet };
+
+
+
+
+//import
+/* main.js */
+import { greet as greetEspanol } from 'greeterEspanol.js';
+import { greet as greetFrancais } from 'greeterFrancais.js';

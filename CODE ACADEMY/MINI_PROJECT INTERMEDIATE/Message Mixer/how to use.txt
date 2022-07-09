@@ -1,0 +1,24 @@
+$ node message-mixer.js caesar 4
+Enter the message you would like to encrypt...
+> hello world
+ 
+Here is your encrypted message:
+> lipps asvph
+ 
+$ node message-mixer.js 'reverse'
+Enter the message you would like to encrypt...
+> hello world
+ 
+Here is your encrypted message:
+> olleh dlrow
+
+
+
+$ node super-encoder.js encode
+Enter the message you would like to encrypt...
+> hello world
+urrkn jrxuc
+$ node super-encoder.js decode
+Enter the message you would like to encrypt...
+> urrkn jrxuc
+hello world
