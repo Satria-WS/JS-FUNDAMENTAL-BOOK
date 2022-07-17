@@ -1,0 +1,6 @@
+stooge["first-name"] // "Joe"
+flight.departure.IATA // "SYD"
+
+stooge["middle-name"] // undefined
+flight.status // undefined
+stooge["FIRST-NAME"] // undefined
