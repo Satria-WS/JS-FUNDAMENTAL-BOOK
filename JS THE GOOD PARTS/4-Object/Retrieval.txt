@@ -4,3 +4,6 @@ flight.departure.IATA // "SYD"
 stooge["middle-name"] // undefined
 flight.status // undefined
 stooge["FIRST-NAME"] // undefined
+
+var middle = stooge["middle-name"] || "(none)";
+var status = flight.status || "unknown";
